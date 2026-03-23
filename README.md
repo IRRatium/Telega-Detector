@@ -10,11 +10,8 @@ pip install python-telegram-bot requests
 
 ## Запуск
 
-```bash
-BOT_TOKEN="твой_токен_от_botfather" python telega_bot.py
-```
 
-Или вписать токен прямо в код (строка `BOT_TOKEN = ...`).
+Замени `YOUR_BOT_TOKEN_HERE` на твой токен в этой строке: `BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"`).
 
 ## Как получить токен
 
@@ -41,20 +38,5 @@ BOT_TOKEN="твой_токен_от_botfather" python telega_bot.py
 ### Railway / Render / VPS
 
 ```bash
-# .env файл
-BOT_TOKEN=твой_токен
-```
-
-```bash
 python telega_bot.py
-```
-
-### Docker
-
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY telega_bot.py .
-RUN pip install python-telegram-bot requests
-CMD ["python", "telega_bot.py"]
 ```
